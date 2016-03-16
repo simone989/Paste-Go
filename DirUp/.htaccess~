@@ -1,0 +1,7 @@
+<limit GET POST>
+order deny, allow
+deny from all
+allow from .dominio1.com
+allow from .dominio2.com
+allow from 123.123.123.123
+<limit>
