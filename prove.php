@@ -1,6 +1,6 @@
 <?php
 
-mysql_connect("localhost", "root", "1404") or
+mysql_connect("localhost", "root", "") or
     die("Connessione non riuscita: " . mysql_error());
 mysql_select_db("PasteGo");
 
