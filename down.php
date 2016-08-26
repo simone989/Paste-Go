@@ -83,7 +83,7 @@ if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
     $ip = $_SERVER['REMOTE_ADDR'];
 }
 
-$mysqli = new mysqli('localhost', 'root', '1404', 'PasteGo');
+$mysqli = new mysqli('localhost', 'root', '', 'PasteGo');
     if ($mysqli->connect_error) {
         die('Errore di connessione (' . $mysqli->connect_errno . ') '
         . $mysqli->connect_error);
