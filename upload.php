@@ -57,7 +57,7 @@ $userfile_tmp = $_FILES['userfile']['tmp_name'];
 $userfile_name = $_FILES['userfile']['name'];
 
 
-$mysqli = new mysqli('localhost', 'root', '1404', 'PasteGo');
+$mysqli = new mysqli('localhost', 'root', '', 'PasteGo');
     if ($mysqli->connect_error) {
         die('Errore di connessione (' . $mysqli->connect_errno . ') '
         . $mysqli->connect_error);
