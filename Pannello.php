@@ -100,7 +100,7 @@ $VarStampa='';
 
 	$VarStampa='';
 	
-	$mysqli = new mysqli('localhost', 'root', '1404', 'PasteGo');
+	$mysqli = new mysqli('localhost', 'root', '', 'PasteGo');
 	    if ($mysqli->connect_error) {
 	        die('Errore di connessione (' . $mysqli->connect_errno . ') '
 	        . $mysqli->connect_error);
@@ -126,7 +126,7 @@ $query1= $mysqli->query("SELECT ElencoDown.Chiavedown, ElencoDown.CodFile,Elenco
 
 
 	
-	$mysqli = new mysqli('localhost', 'root', '1404', 'PasteGo');
+	$mysqli = new mysqli('localhost', 'root', '', 'PasteGo');
 	    if ($mysqli->connect_error) {
 	        die('Errore di connessione (' . $mysqli->connect_errno . ') '
 	        . $mysqli->connect_error);
@@ -148,7 +148,7 @@ $query1= $mysqli->query("SELECT file.ID,file.Codice,file.percorso,file.data,file
  }
 
 	
-	$mysqli = new mysqli('localhost', 'root', '1404', 'PasteGo');
+	$mysqli = new mysqli('localhost', 'root', '', 'PasteGo');
 	    if ($mysqli->connect_error) {
 	        die('Errore di connessione (' . $mysqli->connect_errno . ') '
 	        . $mysqli->connect_error);
@@ -210,7 +210,7 @@ echo "<script >Vx3='".$VarStampa3."'</script>";
 <?php
 
 if(isset($_POST["UserName"]) && (isset($_POST["password"]))){
-	$mysqli = new mysqli('localhost', 'root', '1404', 'PasteGo');
+	$mysqli = new mysqli('localhost', 'root', '', 'PasteGo');
 	    if ($mysqli->connect_error) {
 	        die('Errore di connessione (' . $mysqli->connect_errno . ') '
 	        . $mysqli->connect_error);
@@ -290,7 +290,7 @@ $ELENCODATE="";
 $ELENCOVALORI="";
 $ELENCODATE2="";
 $ELENCOVALORI2="";
-$mysqli = new mysqli('localhost', 'root', '1404', 'PasteGo');
+$mysqli = new mysqli('localhost', 'root', '', 'PasteGo');
 	    if ($mysqli->connect_error) {
 	        die('Errore di connessione (' . $mysqli->connect_errno . ') '
 	        . $mysqli->connect_error);
